@@ -14,7 +14,7 @@ OUTPUT_TYPE ?= docker
 
 BASE.windows := mcr.microsoft.com/windows/nanoserver
 
-TAG ?= $(shell git rev-parse HEAD)
+TAG ?= $(shell git rev-parse --short HEAD)
 
 REGISTRY ?= local
 SERVER_IMAGE_NAME ?= simple-server
